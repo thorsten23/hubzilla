@@ -54,6 +54,7 @@ Further reading about channels and channel creation can be found here:
 ## Account settings
 Compared to the other options there is only a small number of settings for your account. Here you can change your e-mail-address, your password or change your tech level (described below).
 
+Furthermore you can use set up a technical skill level to fit your user experience to you technical skills. Tech levels are explained in [Features](./features/tech_leveld.md)
 
 ## How to delete an account
 To remove your account on a hub you simply go to the account settings and hit the "Remove Account" button or just visit the URL https://yoursite/removeaccount where you have to replace 'yoursite' with the domain name of your Hubzilla site.
@@ -63,34 +64,3 @@ Your account and all its channels will be completely removed from the network. T
 You will need to confirm your password and the channel you are currently logged into will be removed.
 
 **This is irreversible.**
-
-## Using tech levels
-
-Tech levels (or technical skill levels) are used to provide you a experience corresponding to your technical knowledge. By selecting a technical skill level the number of available options and possibilities are limited so you don't become overwhelmed in Hubzilla. If you get more experienced over time you can change your tech level.
-
-If the tech levels are not visible to you you have to ask your hub administrator to unlock them.
-
-![Account Settings](./assets/account_settings_1.png)
-
-There are six different tech levels available:
-
-| Level | Description |
-| :-: | :- |
-| 0 | Beginner/Basic |
-| 1 | Novice - not skilled but willing to learn |
-| 2 | Intermediate - somewhat comfortable |
-| 3 | Advanced - very comfortable |
-| 4 | Expert - I can write computer code |
-| 5 | Wizard - I probably know more than you do |
-
-#### 0 - Beginner/Basic
-
-#### 1 - Novice - not skilled but willing to learn
-
-#### 2 - Intermediate - somewhat comfortable
-
-#### 3 - Advanced - very comfortable
-
-#### 4 - Expert - I can write computer
-
-#### 5 - Wizard - I probably know more than you do
