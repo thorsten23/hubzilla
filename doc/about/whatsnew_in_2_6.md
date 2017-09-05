@@ -16,3 +16,14 @@ This release marks a huge leap forward in regard to bridges to other networks (m
 - CalDAV/CardDAV server moved from addon to core to facilitate closer integration with the native calendar and addressbook.
 - Upgrade to bootstrap-4 beta
 - Improved installer
+
+For a detailed change log have a look [here](https://github.com/redmatrix/hubzilla/blob/master/CHANGELOG).
+
+## Bugfix Release 2.6.1
+- Fix regression in 2.6 where dav clients could not authenticate
+- Raise install requirements to PHP 5.6 and MySql 5.5.3
+- Fix PHP warning in diaspora addon
+- Fix PHP warning in gnu-social addon
+
+## Bugfix Release 2.6.2
+- Webfinger returns invalid XML - GitHub issue #851

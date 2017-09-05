@@ -63,5 +63,6 @@ Depending on your adjusted tech level more and more features become unlocked.
 - Advanced Directory Search
 - Advanced Theme and Layout Settings
 - Premium Channel
+- Custom channel permissions settings
 
 #### 5 - Wizard - I probably know more than you do
