@@ -1,4 +1,4 @@
-# Registration
+# Accounts
 
 In order to use Hubzilla you have to register an account on a Hubzilla server. Some servers are open for registration, some are closed and at some servers you need an invitation to register. For the last one you need an invitation code which comes to you by mail.
 
@@ -54,7 +54,10 @@ Further reading about channels and channel creation can be found here:
 ## Account settings
 Compared to the other options there is only a small number of settings for your account. Here you can change your e-mail-address, your password or change your tech level (described below).
 
-Furthermore you can use set up a technical skill level to fit your user experience to you technical skills. Tech levels are explained in [Features](./features/tech_leveld.md)
+Furthermore you can use set up a technical skill level to fit your user experience to you technical skills. When you are new to Hubzilla we recommend to start with tech level 0 'Beginner/Basic'. In this way most features are hidden so you can concentrate on the basic functionality. Once you've become familar with Hubzilla you can increase your tech level to get to know the more advanced feature.
+
+Tech levels are explained in [Features](./features/tech_leveld.md)
+
 
 ## How to delete an account
 To remove your account on a hub you simply go to the account settings and hit the "Remove Account" button or just visit the URL https://yoursite/removeaccount where you have to replace 'yoursite' with the domain name of your Hubzilla site.
