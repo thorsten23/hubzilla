@@ -14,7 +14,9 @@ This help will show you everything you need to know about channels. From creatin
 ## How to create a channel
 After you finished your registration on a hub you will be presented with the "Create Channel" screen to create your fist channel on this hub.
 
-If you already have a channel and want more you can create another one by using the channel manager or using the URL https://yourdomainadress/new_channel
+If you already have a channel and want more you can create another one by using the channel manager or using the URL https://yourdomainadress/new_channel. The channel manager can be found in your menu.
+
+![Channel manager](./assets/channel_manager.png)
 
 The number of channels you can have maybe limited due to hub.
 
@@ -27,6 +29,7 @@ Normally, your first channel will be one that represents you - so using your own
 Before finishing your channel creation you should adjust your so called permission role in the channel role and privacy settings. Each permission role defines a different level of privacy as who can see your shared photos, who can see that you are online or if your profile is published in the global user directory etc.
 
 If you are unsure what to choose here start with "Social - Private". The privacy settings can be changed later.
+
 More on security and privacy and permission roles is written below.
 
 Importing an existing channel isn't important for creating your first channel so it is explained below.
@@ -36,6 +39,8 @@ After you've created a channel you will directly be taken to the channel setting
 
 ![settings menu](./assets/user_menu.png)
 At the top of the channel settings screen you can see your channel address and the address you can use to access your files and photos via WebDAV (see [personal cloud storate](./personal_cloud_storage.md)).
+
+![Chanel settings](./assets/channel_settings_1.png)
 
 ### Basic settings
 Here you can change channel name but remember that the channel address is not changed.
@@ -101,8 +106,18 @@ Furthermore you can set or unset the following permissions:
 - Allow us to suggest you as a potential friend to new members
 - Allow others to tag your posts
 
-**TODO**
-**- Expire other channel content after this many days** what's the meaning of this
+Another setting is "Expire other channel content after this many days". Here you can set after how many days content imported from channels you are connected with will expire and therefore be deleted.
+
+Anything that is visible on your channel page will not expire. For content on your network page, we'll keep an entire conversation if  
+a) you wrote it
+b) you starred something in it
+c) you filed something in it
+d) you commented or reacted on it somehow (this was added recently)
+
+If you don't want other contents to expire you simply set expiration limit to zero.
+
+This limit is also a global setting for your hub which can only be set by your hub administrator. The limit of your hub always prevails your individual limit. I.e. if you set your limit to 20 days and your hub has a limit of 10 days the content from your connected channels will expire after 10 days. Comments from connected channels to your posts is not included.
+
 
 ### Notification settings
 Notifications are divided up into three types:
@@ -123,35 +138,36 @@ Channels and the contents of channels can be exported by hand.
 
 ![export channel](./assets/settings_export_channel.png)
 
-These export files can be used as a simple backup of your channel information or content or to move or clone your channel to another hub.
+These export files can be used as a simple backup of your channel information or content or to move or clone your channel to another hub which is the most common use case for exporting your channel.
 
-There are two different options to export your channel. You can
-1. export your basic channel information
-2. export your channel information and recent content
+There are three different options to export your channel. You can:
+1. export your basic channel information:
+
+  This includes your connections, permissions, profile and basic data as settings and add-on settings. But most important it includes your channel identity information (including the "channel_prvkey") private key required to claim ownership of the channel.
+  **TODO** relocate and compatibility section
+
+2. export content for particular years/months:
+
+  The content export contains years/months of posts and stored files (including photos). It doesn't include any channel identity information. A detailed description on how this is done can be found on the export screen.
+
+  Be careful not to export to much content into a single file. If you attempt to import too much content at a time the application will white screen. How much you can import without a white screen is primarily a function of total file size.
+
+3. export your complete channel information and recent content:
+
+  This type of exports consists of two parts: your data section and your "posting history".
+  The data section includes your channel, connections, configuration, permissions, apps, chatrooms, events, webpages, mail and wikis. Furthermore it exports a "few" months of post. Actually a "few" means six months but this can change in future because this feature is highly dependent on how much memory is available.
 
 The export file will contain your information in JSON-format.
 
-The basic channel information contain a backup of your
-- connections
-- permissions
-- profile and basic data
+**The complete export may be VERY large and it can take several minutes for this download to begin.**
 
-The extended export contains
-- connections
-- permissions
-- profile and basic data
-- months of posts
+An export of your channel can also be used as a backup in case your channel is damaged.
+But: Without knowing what exactly is damaged there is no guarantee that importing an export-file will automatically repair your broken channel.
 
-**The extended export may be VERY large and it can take several minutes for this download to begin.**
+Best practice is to backup your content regularly if you don't have an existing clone. Once a month backup the channel data and the content from the previous month.
 
-You can also restrict your extended export to a particular year or month. A detailed description on how this is done can be found on the export screen.
-
-**TODO**
-**open questions**
-- are only posts exported? what about the pictures containing these posts?
-- are the complete settings exported? what about addons?
-- is a channel export useful as a backup?
-- is the export of a particular year/month only contents? Can this be imported on a different hub?
+**The following method is not recommend to technical novices**  
+This can be done from the Zot API using a simple script and could be automated. You can also make monthly snapshots of your files/photos but this currently requires some manual fiddling. The metadata is available from the Zot API, but the actual file contents should probably be synced through the 'snap' module which provides raw access to your cloud storage via WebDAV.  
 
 ## Importing channels and channel contents
 When talking about importing one has to distinguish between importing channels and importing channel contents.
@@ -161,29 +177,42 @@ The channel import is a bit hidden in the UI. In order to import a channel to a 
 
 ![import channel](./assets/channel_import_1.png)
 
-You can choose if you want to import your channel from an export file or if you want to import your channel from the old hub via network.
+You can choose if you want to import your channel from an export file or if you want to import your channel from the old hub via network. When cloning over the network, only the basic channel information is cloned (everything except posts and files). I
 
-**TODO**
-**Questions**
-- what is the difference in importing via file or importing via network?
+Wether you can import everything of your channel at once depends on how much you already posted. If you post "lightly" or "moderately" you can get away with migrating a year of content at a time. If you post frequently or "heavily" you will run into errors trying to import more than a few months. Existing files/photos can only be migrated by plugin currently.
 
-### Import channel contents
-**TODO**
+**TODO** reference to plugin
 
-https://hubzilla.dev/import_items
+### Import channel content
+For importing only channel content there is no menu in the interface. You have to use the URL https://hubzilla.dev/import_items
+
+By this way you can import content to another hub where you already have a clone. As already told above how much content you can migrate at a time depends on how much you posted.
+
 ## How to clone a channel
 Channels can have clones associated with separate and otherwise unrelated accounts on independent hubs. Communications shared with a channel are synchronized among the channel clones, allowing a channel to send and receive messages and access shared content from multiple hubs.
 
-To clone a channel you first have to export your channel and then import it on the other hub. When importing you have the possibility to make the imported channel the new primary channel.
+To clone a channel you first have to export your channel and then import it on the other hub.
+Is it sufficient to export the basic channel information to create the clone. Hubzilla will use whatever information is available at the time and sync it. This may not be all the channel information or posts. Changes that are made after the clone is created will sync. Changes made before the clone was created may not synchronise unless you take additional steps to import the posts and files/photos.  
 
+Best practice would be to create a clone very soon after creating a channel. This way files and photos will be synced from the start. Syncing files and photos afterwards is possible but may require a bit of hand holding and is not very seamless.
+
+When importing you have the possibility to make the imported channel the new primary channel.
 You can have more than one clone.
-
 
 To read more about the possibilities and background of clones see the concepts.
 
-## How to move a channel to another server
-**TODO**
+## What is my primary channel?
+It's your "preferred location". Best to provide an example here. Let's say I don't have a channel clone, but I do routine backups to a thumb drive. This thumb drive contains my identity and friends, but *not* all of my content. If my site goes down "temporarily" I can use this thumb drive and load it on another site and stay connected with my friends, but I still want my "home URL" to point to the site with all my content, not the new site which has none. Your primary URL is the one that people will visit if they click your photo or name.
 
+## How to move a channel to another server
+Hubzilla 2.x or later allows you to move a channel to another server. It currently works by making the original channel "read-only". This way you can still migrate files and photos and content if you have a large quantity of any of these. You cannot use the original channel to post new content and any later changes will not be synced.
+
+To move a channel simply make an export of your desired channel and import the channel to your new hub or use the import via network. Before you start to import you can enable the option to move the channel. Thereby your old channel and all clones of it will be disabled.
+
+**TODO** What's the intention behind this move channel?
+This is not an optimal setting for many reasons but is provided to allow compatibility with other networks such as Diaspora when they finally allow a "move channel" sometime in the next year or three. When this is supported on their end moving a channel will also preserve any Diaspora connections.
+
+It is not possible to preserve connections on other networks from other locations currently.
 
 ## Remove a channel
 To remove a channel you can simply call http://yourhubadress/removeme or press the "Remove Channel"-button in your channel settings:
@@ -196,22 +225,19 @@ To remove your channel you have to verify this by entering your valid hub passwo
 
 **Removing your channel is irreversible.**
 
+If you thought about exporting your channel, removing it an importing it again later this can not be done without admin assistance to remove the channel record in the database, which should not be attempted if you have Diaspora connections.
+
 By default only the channel on your current hub is removed. Clones of your channel on other hubs are not removed. If you want to remove your channel completely including it's clones you have to activate this before removing.
 
 ![Remove Channel dialog](./assets/channel_remove_2.png)
 
-**TODO**
-Questions:
-I have only one channel:
-- will my channel automatically disappear from my connections?
-- will there be a notification to the connections of my channel?
-- what happens to my posts?
-- what happens to my data, database entries?
-- what happens if I export my channel, remove it and import it again on the same server?
+**TODO** Difference between channel with and without clone
+After deleting your channel it will automatically disappear from your connections without any notification. Your posts will also be deleted not only on your own hub but also on your federated hubs. This is limited to the grid (Hubzilla) and can take several days to complete.
+Deleting posts and content federated to other networks than Hubzilla is not supported.
 
-I have clones
-- same questions if i remove all clones as above
-- what happens if I remove my primary channel?
+If you delete your primary channel and don't provide a new primary, other sites will randomly choose one of your remaining channels and make it primary until they get further direction from you as to your preferred primary location.
+
+All of your posts on the clone that is removed will be removed from that server. This is a "local remove" and should not affect any other clones.
 
 ## Further reading
 - nomadic identity
