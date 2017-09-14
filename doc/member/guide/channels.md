@@ -1,4 +1,14 @@
 # Channels
+
+## Open issues
+- insert correct links
+- complete information about basic export: what's in the relocate and compatibility sections?
+- import content: reference to plugin for migration of photos and files
+- insert links to further reading
+- insert links to connections (how to connect to other channels)
+- insert screenshot where to select primary channel
+
+## Introduction
 Channels are simply collections of content stored in one place. A channel can represent anything. It could represent you, a website, a forum, photo albums, anything.
 
 For most people, their first channel will be "Me, on the internet", a channel that represents themselves.
@@ -140,22 +150,24 @@ Channels and the contents of channels can be exported by hand.
 
 These export files can be used as a simple backup of your channel information or content or to move or clone your channel to another hub which is the most common use case for exporting your channel.
 
+![Export channel](./assets/channel_export.png)
+
 There are three different options to export your channel. You can:
 1. export your basic channel information:
 
   This includes your connections, permissions, profile and basic data as settings and add-on settings. But most important it includes your channel identity information (including the "channel_prvkey") private key required to claim ownership of the channel.
-  **TODO** relocate and compatibility section
 
-2. export content for particular years/months:
+2. export your complete channel information and recent content:
+
+  This type of exports consists of two parts: your data section and your "posting history".
+  The data section includes your channel, connections, configuration, permissions, apps, chatrooms, events, webpages, mail and wikis. Furthermore it exports a "few" months of post. Actually a "few" means six months but this can change in future because this feature is highly dependent on how much memory is available.
+
+3. export content for particular years/months:
 
   The content export contains years/months of posts and stored files (including photos). It doesn't include any channel identity information. A detailed description on how this is done can be found on the export screen.
 
   Be careful not to export to much content into a single file. If you attempt to import too much content at a time the application will white screen. How much you can import without a white screen is primarily a function of total file size.
 
-3. export your complete channel information and recent content:
-
-  This type of exports consists of two parts: your data section and your "posting history".
-  The data section includes your channel, connections, configuration, permissions, apps, chatrooms, events, webpages, mail and wikis. Furthermore it exports a "few" months of post. Actually a "few" means six months but this can change in future because this feature is highly dependent on how much memory is available.
 
 The export file will contain your information in JSON-format.
 
@@ -180,8 +192,6 @@ The channel import is a bit hidden in the UI. In order to import a channel to a 
 You can choose if you want to import your channel from an export file or if you want to import your channel from the old hub via network. When cloning over the network, only the basic channel information is cloned (everything except posts and files). I
 
 Wether you can import everything of your channel at once depends on how much you already posted. If you post "lightly" or "moderately" you can get away with migrating a year of content at a time. If you post frequently or "heavily" you will run into errors trying to import more than a few months. Existing files/photos can only be migrated by plugin currently.
-
-**TODO** reference to plugin
 
 ### Import channel content
 For importing only channel content there is no menu in the interface. You have to use the URL https://hubzilla.dev/import_items
@@ -209,9 +219,6 @@ Hubzilla 2.x or later allows you to move a channel to another server. It current
 
 To move a channel simply make an export of your desired channel and import the channel to your new hub or use the import via network. Before you start to import you can enable the option to move the channel. Thereby your old channel and all clones of it will be disabled.
 
-**TODO** What's the intention behind this move channel?
-This is not an optimal setting for many reasons but is provided to allow compatibility with other networks such as Diaspora when they finally allow a "move channel" sometime in the next year or three. When this is supported on their end moving a channel will also preserve any Diaspora connections.
-
 It is not possible to preserve connections on other networks from other locations currently.
 
 ## Remove a channel
@@ -219,7 +226,7 @@ To remove a channel you can simply call http://yourhubadress/removeme or press t
 
 ![Remove Channel](./assets/channel_remove_1.png)
 
-**Before removing a channel be sure you have the activated the right one in the case that you have more than one channel on this hub**
+**Before removing a channel be sure you have the activated the right channel in the case that you have more than one channel on this hub**
 
 To remove your channel you have to verify this by entering your valid hub password.
 
@@ -227,17 +234,18 @@ To remove your channel you have to verify this by entering your valid hub passwo
 
 If you thought about exporting your channel, removing it an importing it again later this can not be done without admin assistance to remove the channel record in the database, which should not be attempted if you have Diaspora connections.
 
-By default only the channel on your current hub is removed. Clones of your channel on other hubs are not removed. If you want to remove your channel completely including it's clones you have to activate this before removing.
+If your channel has no clones it will be removed completely from the grid. After deleting your channel it will automatically disappear from your connections without any notification. Your posts will also be deleted not only on your own hub but also on your federated hubs. This is limited to the grid (Hubzilla) and can take several days to complete.
+
+Deleting posts and content federated to other networks than Hubzilla is not supported.
+
+If you have clones only the channel on your current hub is removed. All of your posts on the channel you are about to delete  will be removed from that server. This is a "local remove" and should not affect any other clones.
+
+If you want to remove your channel completely including it's clones you have to activate this before removing. The result is the same as if you had only one channel without clones.
 
 ![Remove Channel dialog](./assets/channel_remove_2.png)
 
-**TODO** Difference between channel with and without clone
-After deleting your channel it will automatically disappear from your connections without any notification. Your posts will also be deleted not only on your own hub but also on your federated hubs. This is limited to the grid (Hubzilla) and can take several days to complete.
-Deleting posts and content federated to other networks than Hubzilla is not supported.
+In the case you deleted your primary channel and didn't provide a new primary, other sites will randomly choose one of your remaining channels and make it primary until they get further direction from you as to your preferred primary location.
 
-If you delete your primary channel and don't provide a new primary, other sites will randomly choose one of your remaining channels and make it primary until they get further direction from you as to your preferred primary location.
-
-All of your posts on the clone that is removed will be removed from that server. This is a "local remove" and should not affect any other clones.
 
 ## Further reading
 - nomadic identity
