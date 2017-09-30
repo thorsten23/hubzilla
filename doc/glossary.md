@@ -23,6 +23,9 @@ Otherwise referred to as "the network", Hubzilla is a collection of individual c
 ###### nomadic identity
 The ability to authenticate and easily migrate an identity across independent hubs and web domains. Nomadic identity provides true ownership of an online identity, because the identities of the channels controlled by an account on a hub are not tied to the hub itself. A hub is more like a "host" for channels. With Hubzilla, you don't have an "account" on a server like you do on typical websites; you own an identity that you can take with you across the grid by using clones.
 
+###### Primary channel
+The primary channel is your "preferred location". Best to provide an example here. Let's say I don't have a channel clone, but I do routine backups to a thumb drive. This thumb drive contains my identity and friends, but *not* all of my content. If my site goes down "temporarily" I can use this thumb drive and load it on another site and stay connected with my friends, but I still want my "home URL" to point to the site with all my content, not the new site which has none. Your primary URL is the one that people will visit if they click your photo or name.
+
 ###### Technical skill level
 Account setting where you can adjust your user experience depending on your technical knowledge. See [Registration](./member/registration.md).
 

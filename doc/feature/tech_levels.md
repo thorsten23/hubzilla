@@ -58,6 +58,7 @@ Depending on your adjusted tech level more and more features become unlocked.
 - Even More Encryption
 - Enable Voting Tools
 - Connection Filtering
+- Guest Access Token
 
 #### 4 - Expert - I can write computer
 - Advanced Directory Search

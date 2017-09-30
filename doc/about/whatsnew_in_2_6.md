@@ -27,3 +27,11 @@ For a detailed change log have a look [here](https://github.com/redmatrix/hubzil
 
 ## Bugfix Release 2.6.2
 - Webfinger returns invalid XML - GitHub issue #851
+
+## Bugfix Release 2.6.3
+- Fix anonymous comments/likes on photos - this is not yet implemented
+- Fix favicon not displayed on certain pages
+- Fix hubzilla logo icon for favicon and email notifications
+- Fix an issue with displaying selected theme in settings/display
+- [SECURITY] Restrict the input characters we accept in token verification strings to - hex digits
+- Remove hubzilla.nl from fallback directory servers

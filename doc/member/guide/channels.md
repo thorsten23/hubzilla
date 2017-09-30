@@ -1,14 +1,5 @@
 # Channels
 
-## Open issues
-- insert correct links
-- complete information about basic export: what's in the relocate and compatibility sections?
-- import content: reference to plugin for migration of photos and files
-- insert links to further reading
-- insert links to connections (how to connect to other channels)
-- insert screenshot where to select primary channel
-
-## Introduction
 Channels are simply collections of content stored in one place. A channel can represent anything. It could represent you, a website, a forum, photo albums, anything.
 
 For most people, their first channel will be "Me, on the internet", a channel that represents themselves.

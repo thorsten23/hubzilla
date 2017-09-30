@@ -1,14 +1,5 @@
 # Profiles
 
-## TODO
-- Insert Links to other help files
-- where can I set my restrictions to display my profile photo for others?
-- Link zu Advanced profiles and multiple profiles
-- profile privacy
-
-## Introduction - what is displayed in the profile?
-
-
 You always have a profile known as your "default" or "public" profile. This profile is always available to the general public and cannot be hidden (there may be rare exceptions on privately run or disconnected sites). You may, and probably should restrict the information you make available on your public profile.
 
 That said, if you want other friends to be able to find you, it helps to have the following information in your public profile:
@@ -136,6 +127,5 @@ How can I set restrictions.
 There is a setting which allows you to publish your profile to a directory and ensure that it can be found by others. You can change this setting on the "Settings" page.
 
 If you do not wish to be found be people unless you give them your channel address, you may leave your profile unpublished.
-
 
 https://hubzilla.dev/profile/admin
