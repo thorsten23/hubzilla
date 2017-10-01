@@ -1,4 +1,5 @@
 # Profiles
+Each channel has at least one profile which typically contains information describing the channel. If the channel represents a person in a social network, for example, then the profile might provide contact information and other personal details about the person.
 
 You always have a profile known as your "default" or "public" profile. This profile is always available to the general public and cannot be hidden (there may be rare exceptions on privately run or disconnected sites). You may, and probably should restrict the information you make available on your public profile.
 
@@ -9,6 +10,8 @@ That said, if you want other friends to be able to find you, it helps to have th
 - Your location on the planet, at least to a country level.
 
 In addition, if you'd like to meet people that share some general interests with you, please take a moment and add some "Keywords" to your profile. Such as "music, linux, photography" or whatever. You can add as many keywords as you like.
+
+Channels can have multiple profiles, where the displayed profile depends on the observer. More about multiple profiles can be found in the feature section.
 
 ## Edit profile
 There are several possibilities to start editing your profile.
@@ -24,16 +27,14 @@ Here you may edit an existing profile, change the profile photo, add things to a
 
 Your profile details are divided into five major sections
 - personal information: what's your name, when is your birthday etc.
-- contact information in v-card format: (e-mail, phone number and messenger), which can be exported by the viewer of your profile and imported into a corresponding programm
+- contact information in v-card format: (e-mail, phone number and messenger), which can be exported by the viewer of your profile and imported into a corresponding program
 - location: where do you live, which street, town ...
-- relation: are you in a relation? what are your sexual preferences?
-- miscellaneous: everything else, some freetext fields to
+- relation: are you in a relation? What are your sexual preferences?
+- miscellaneous: everything else, some free text fields
 
 If you want more profile information fields and more possibilities to choose from, i.e. your "sexual preferences", simply enable "advanced profiles" in your additional features. Which advanced profile fields will are included by the advanced profiles depends on your hub installation respectively your hub administrator.
 
-See addition features for more information on advanced profiles.
-
-TODO Link advanced profiles
+See additional features for more information on [advanced profiles.](../../feature/advanced_profiles.md)
 
 ## Profile photo
 You can change your profile photo by using the corresponding profile tool
@@ -110,22 +111,20 @@ By clicking on the photo you will be redirected to the URL of the thing.
 
 You can edit your "thing" afterwards is also possible by clicking on the thing name. Here you can choose to delete the thing or edit your settings.
 
-## Keywords and Directory Search
+## Who can see my profile? How can I set restrictions?
+As told above you have at least one "default" or "public" profile per channel which is visible to anybody on the internet. The information of your profile are displayed at your profile page and a part of your profile information on your channel home:
 
-On the directory page, you may search for people with published profiles. Currently, only the name field and the keywords are searched.  You may also include such keywords in your default profile - which may be used to search for common interests with other members. Keywords are used in the channel suggestion tool and although they aren't visible in the directory, they are shown if people visit your profile page.
+![Channel home](./assets/profile_information_channel.png)
 
-On your Connnections page and in the directory there is a link to "Suggestions" or "Channel Suggestions", respectively. This will find channels who have matching and/or similar keywords. The more keywords you provide, the more relevant the search results that are returned. These are sorted by relevance.
+Furthermore your profile can be published to a directory so it can be found by others. If your profile will be published to a directory depends on your channel permission category. For example if your channel permission category is set to "social - mostly public" your profile will be listed in the directory. If your channel permission is set to "social - private" your profile will not be listed in the directory. And if you chose the "custom/expert mode" as your channel permission category there will be an extra option to publish your default profile to the directory.
 
-
-## Additional features
-You can use multiple profiles and advanced profiles if these features are enabled for your hub. More information on
-
-## Who can see my profile
-who can see my picture, my data etc.
-How can I set restrictions.
-
-There is a setting which allows you to publish your profile to a directory and ensure that it can be found by others. You can change this setting on the "Settings" page.
+More about directories can be found at the feature description about [directory services.](../../feature/directory_service.md)
 
 If you do not wish to be found be people unless you give them your channel address, you may leave your profile unpublished.
 
-https://hubzilla.dev/profile/admin
+If this option is not visible to you your hub admin may enabled the setting that
+all profiles on this site have to be listed in the directory independently of your channel permission setting.
+
+The only possibility to make your default profile invisible to the internet is by using the "custom/expert mode" in your channel permission category. If you use this category you have the possibility to select who can view your default profile. Anybody else will only see your profile picture and your profile name.
+
+If you want a more refined approach to share and restrict profile information amongst different groups of connections have a look at the [multiple profile feature.](../../feature/multiple_profiles.md)
