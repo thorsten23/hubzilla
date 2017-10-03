@@ -127,4 +127,10 @@ all profiles on this site have to be listed in the directory independently of yo
 
 The only possibility to make your default profile invisible to the internet is by using the "custom/expert mode" in your channel permission category. If you use this category you have the possibility to select who can view your default profile. Anybody else will only see your profile picture and your profile name.
 
+Who can see your profile can be seen when you edit your profile:
+
+![Profile visibility](./assets/profile_visibility.png)
+
+The visibility shown here corresponds your selection for your channel permission limit regarding your profile.
+
 If you want a more refined approach to share and restrict profile information amongst different groups of connections have a look at the [multiple profile feature.](../../feature/multiple_profiles.md)

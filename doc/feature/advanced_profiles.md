@@ -1,9 +1,5 @@
 # Advanced profiles and profile fields
 
-## TODO
-- insert correct links
-
-## Advanced profiles
 Advanced profiles provide the member of the hub a greater number of profile fields which can be used in his profile. Additionally the number of options for some profile fields is increased. I.e. you can choose between 30 different options for your marital status when using advanced profiles instead of nine when the advanced profiles are not enabled.
 
 To use advanced profiles as an user a minimum technical skill level of one is required.
