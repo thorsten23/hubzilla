@@ -97,7 +97,7 @@ Additional to the standard profile information you can add more information abou
 
 ![Profile things](./assets/profile_add_things.png)
 
-Tell us what you've got, want, like or dislike. Just enter the name of the thing and add an URL or an URL for a photo of the thing.
+Tell us what you've got, want, like or dislike. Just enter the name of the thing and add an URL or an URL for a photo of the thing (optional). Photos of the thing will automatically be cropped and copied into the local database regardless whether the photo is an external image or a photo from your phot albums.
 
 You can decide if there will be a post about your new profile thing or not and who can see this thing when looking at your profile.
 
@@ -109,7 +109,7 @@ Things are visible on your profile screen and displayed directly below your stan
 
 By clicking on the photo you will be redirected to the URL of the thing.
 
-You can edit your "thing" afterwards is also possible by clicking on the thing name. Here you can choose to delete the thing or edit your settings.
+You can edit your "thing" afterwards is also possible by clicking on the thing name. Here you can choose to delete the thing or edit your settings. Photos of things are not saved in your photo albums but only internally. If you change the photo of the thing the old photo will be replaced by the new one.
 
 ## Who can see my profile? How can I set restrictions?
 As told above you have at least one "default" or "public" profile per channel which is visible to anybody on the internet. The information of your profile are displayed at your profile page and a part of your profile information on your channel home:
@@ -120,10 +120,10 @@ Furthermore your profile can be published to a directory so it can be found by o
 
 More about directories can be found at the feature description about [directory services.](../../feature/directory_service.md)
 
-If you do not wish to be found be people unless you give them your channel address, you may leave your profile unpublished.
+If you do not wish to be found by people unless you give them your channel address, you may leave your profile unpublished.
 
 If this option is not visible to you your hub admin may enabled the setting that
-all profiles on this site have to be listed in the directory independently of your channel permission setting.
+all profiles on this site have to be listed in the directory independently of your channel permission setting. The hub admin has also the possibility to block all public access to otherwise personal public pages on your site unless one is authenticated.
 
 The only possibility to make your default profile invisible to the internet is by using the "custom/expert mode" in your channel permission category. If you use this category you have the possibility to select who can view your default profile. Anybody else will only see your profile picture and your profile name.
 

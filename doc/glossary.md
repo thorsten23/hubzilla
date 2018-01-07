@@ -7,6 +7,8 @@ The fundamental identity on the grid. Channels can make connections with other c
 ###### clone
 Channels can have clones associated with separate and otherwise unrelated accounts on independent hubs. Communications shared with a channel are synchronized among the channel clones, allowing a channel to send and receive messages and access shared content from multiple hubs. Cloning allows you to completely move a channel from one hub to another, taking your data and connections with you. See nomadic identity.
 
+###### directory service
+
 ###### grid
 The global network of hubs that exchange information with each other using the Zot protocol.
 
@@ -25,6 +27,8 @@ The ability to authenticate and easily migrate an identity across independent hu
 
 ###### Primary channel
 The primary channel is your "preferred location". Best to provide an example here. Let's say I don't have a channel clone, but I do routine backups to a thumb drive. This thumb drive contains my identity and friends, but *not* all of my content. If my site goes down "temporarily" I can use this thumb drive and load it on another site and stay connected with my friends, but I still want my "home URL" to point to the site with all my content, not the new site which has none. Your primary URL is the one that people will visit if they click your photo or name.
+
+###### Profiles
 
 ###### Technical skill level
 Account setting where you can adjust your user experience depending on your technical knowledge. See [Registration](./member/registration.md).
