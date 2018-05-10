@@ -1,5 +1,6 @@
 # Channels
 
+
 Channels are simply collections of content stored in one place. A channel can represent anything. It could represent you, a website, a forum, photo albums, anything.
 
 For most people, their first channel will be "Me, on the internet", a channel that represents themselves.
@@ -132,7 +133,7 @@ Adjust how much and for what kind of events you want a notification. The setting
 Up to now you can only set whether to start your calendar week on monday.
 
 ## How to connect to other channels
-For details about how to connect to other channels please read the details about connections.
+For details about how to connect to other channels please read the details about [connections](./connections).
 
 ## How to export a channel
 Channels and the contents of channels can be exported by hand.
@@ -236,10 +237,3 @@ If you want to remove your channel completely including it's clones you have to 
 ![Remove Channel dialog](./assets/channel_remove_2.png)
 
 In the case you deleted your primary channel and didn't provide a new primary, other sites will randomly choose one of your remaining channels and make it primary until they get further direction from you as to your preferred primary location.
-
-
-## Further reading
-- nomadic identity
-- permission roles
-- connections
-- permission groups
