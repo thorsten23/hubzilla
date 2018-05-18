@@ -130,7 +130,7 @@ Notifications are divided up into three types:
 Adjust how much and for what kind of events you want a notification. The settings are self explanatory.
 
 ### Miscellaneous settings
-Up to now you can only set whether to start your calendar week on monday.
+Up to now you can only set whether to start your calendar week on Monday.
 
 ## How to connect to other channels
 For details about how to connect to other channels please read the details about [connections](./connections).

@@ -23,6 +23,8 @@ You can get more information about censorship and privacy at [Privacy Polivy](./
 
 To get to the registration site you simply press the corresponding button or directly call the URL of the site you want to register to followed by "/register".
 
+![Registration page](./assets/register_account.png)
+
 Starting at the registry page you have to enter a valid email-address and choose a password. To ensure you didn't made a typing error you have to repeat your password. The password has to be at least six characters long.
 
 If an invitation was required to register at this hub you also have to enter your invitation code.
@@ -41,7 +43,7 @@ The most important however is that you e-mail needed to recover your password wh
 Your e-mail-address itself will never be published on Hubzilla and only be used for purpose described above.
 
 ### What's next?
-As already told the  e-mail-address you specified during the registration process will be validated. Therefore your Hubzilla-server will send you a registration confirmation to this e-mail-address. This confirmation contains a link to validate your e-mail-address.
+As already told the e-mail-address you specified during the registration process will be validated. Therefore your Hubzilla-server will send you a registration confirmation to this e-mail-address. This confirmation contains a link to validate your e-mail-address.
 
 If you don't receive this registration confirmation have a look into your spam folder.
 
