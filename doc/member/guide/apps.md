@@ -1,12 +1,6 @@
 
 # Apps
 
-- [Add apps](#add-apps)
-- [Manage apps](#manage-apps)
-- [Arrange apps](#arrange-apps)
-- [Create new app](#create-new-app)
-- [Installing and updating apps](#installing-and-updating-apps)
-
 Most time when we talk about apps we refer to the Hubzilla components that provide some web service, i.e. "Mail", "Wiki", "Connections" etc. There are core apps which are part of every Hubzilla installation and apps which are provided by plugins.
 
 Which apps are available to your channel, including both core apps and those supplied by plugins, can be seen on your apps page. The apps page can be accessed by the hamburger menu (also called app tray) on the top right of your screen:

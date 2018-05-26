@@ -1,13 +1,5 @@
 # Profiles
 
-- [Edit profile](#edit-profile)
-- [Profile photo](#profile-photo)
-	- [Upload new profile photo](#upload-new-profile-photo)
-	- [Choose photo from photo album](#choose-photo-from-photo-album)
-- [Cover photo](#cover-photo)
-- [Add profile things](#add-profile-things)
-- [Who can see my profile? How can I set restrictions?](#who-can-see-my-profile-how-can-i-set-restrictions)
-
 Each channel has at least one profile which typically contains information describing the channel. If the channel represents a person in a social network, for example, then the profile might provide contact information and other personal details about the person.
 
 You always have a profile known as your "default" or "public" profile. This profile is always available to the general public and cannot be hidden (there may be rare exceptions on privately run or disconnected sites). You may, and probably should restrict the information you make available on your public profile.

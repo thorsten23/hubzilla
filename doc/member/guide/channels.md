@@ -1,6 +1,5 @@
 # Channels
 
-
 Channels are simply collections of content stored in one place. A channel can represent anything. It could represent you, a website, a forum, photo albums, anything.
 
 For most people, their first channel will be "Me, on the internet", a channel that represents themselves.

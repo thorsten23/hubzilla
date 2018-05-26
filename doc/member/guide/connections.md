@@ -1,25 +1,5 @@
 # Connections
 
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [Connections](#connections)
-	- [Finding connections](#finding-connections)
-	- [Connect with other Hubzilla channels](#connect-with-other-hubzilla-channels)
-	- [Editing connections](#editing-connections)
-		- [Privacy groups](#privacy-groups)
-		- [Individual permissions](#individual-permissions)
-		- [Connection tools](#connection-tools)
-	- [Connections](#connections)
-	- [Accepting connections](#accepting-connections)
-	- [Deleting Connections](#deleting-connections)
-	- [One side connections](#one-side-connections)
-	- [Invite friends](#invite-friends)
-		- [Connecting to Premium channels](#connecting-to-premium-channels)
-	- [Connect with channels on other networks](#connect-with-channels-on-other-networks)
-		- [Connect with RSS feeds](#connect-with-rss-feeds)
-
-<!-- /TOC -->
-
 Connections in Hubzilla can take on a great many different meanings. A connection is more accurately defined as a set of permissions that you have granted to somebody else. In traditional social network applications, all connections are granted the same permissions; or at most there two levels (friends and 'followers'). In Hubzilla a range of separate permissions may be set/adjusted depending on the situation and relationship you have with the other channel. You can allow somebody to view your posts but not your photos. You can also deny them permission to comment on your posts or send private mail to you. But let's keep it simple, you want to be friends with somebody like you are familiar with from social networking. How do you do it?
 
 ## Finding connections
