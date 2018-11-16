@@ -1,0 +1,2 @@
+Bookmarks
+Bookmarks indicate a link which can be saved to your bookmark folder. They use the sequence #^ followed by the link. Often these are generated automatically. If the 'bookmarker' addon is installed, this sequence will be converted to a bookmark icon when viewing the post or comment online, and clicking the icon will save the bookmark. If the bookmarker addon is not installed, the post 'dropdown menu' contains a link for saving the bookmark or bookmarks.
